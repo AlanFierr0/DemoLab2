@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AuthorControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AuthorControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.controller.html">com.example.demo.controller</a> &gt; AuthorControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.641s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAllAuthorsTest()</td>
+<td class="success">1.589s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAuthorByIdTest()</td>
+<td class="success">3.052s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:06:08.088 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.controller.AuthorControllerTest]: AuthorControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:06:08.325 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.AuthorControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2023-08-13T13:06:08.942-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : Starting AuthorControllerTest using Java 17.0.2 with PID 3928 (started by Alan in F:\Projects\DemoLab)
+2023-08-13T13:06:08.944-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-13T13:06:09.880-03:00  INFO 3928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13T13:06:10.059-03:00  INFO 3928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2023-08-13T13:06:10.174-03:00  INFO 3928 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-08-13T13:06:10.939-03:00  INFO 3928 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-08-13T13:06:10.959-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-13T13:06:10.960-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13T13:06:11.132-03:00  INFO 3928 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-13T13:06:11.135-03:00  INFO 3928 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2169 ms
+2023-08-13T13:06:11.246-03:00  INFO 3928 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f2b70540-3c8f-4578-a452-a736927f328e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-08-13T13:06:11.683-03:00  INFO 3928 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13T13:06:11.819-03:00  INFO 3928 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13T13:06:11.824-03:00  INFO 3928 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-13T13:06:12.146-03:00  INFO 3928 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-13T13:06:12.390-03:00  INFO 3928 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13T13:06:12.864-03:00  INFO 3928 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-13T13:06:13.702-03:00  INFO 3928 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13T13:06:13.759-03:00  INFO 3928 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13T13:06:14.198-03:00  WARN 3928 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13T13:06:14.842-03:00  INFO 3928 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60846 (http) with context path ''
+2023-08-13T13:06:14.858-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : Started AuthorControllerTest in 6.304 seconds (process running for 8.049)
+2023-08-13T13:06:14.931-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-13T13:06:14.946-03:00  INFO 3928 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2023-08-13T13:06:15.014-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : Starting AuthorControllerTest using Java 17.0.2 with PID 3928 (started by Alan in F:\Projects\DemoLab)
+2023-08-13T13:06:15.014-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-13T13:06:15.340-03:00  INFO 3928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13T13:06:15.365-03:00  INFO 3928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2023-08-13T13:06:15.408-03:00  INFO 3928 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-08-13T13:06:15.514-03:00  INFO 3928 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-08-13T13:06:15.515-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-13T13:06:15.516-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13T13:06:15.567-03:00  INFO 3928 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-13T13:06:15.568-03:00  INFO 3928 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 549 ms
+2023-08-13T13:06:15.585-03:00  INFO 3928 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:5bff6ba1-eb9a-4f48-9f36-a30def359067;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-08-13T13:06:15.670-03:00  INFO 3928 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13T13:06:15.700-03:00  INFO 3928 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-13T13:06:15.700-03:00  INFO 3928 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13T13:06:15.749-03:00  INFO 3928 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-13T13:06:15.859-03:00  INFO 3928 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13T13:06:15.870-03:00  INFO 3928 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13T13:06:16.078-03:00  WARN 3928 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13T13:06:16.376-03:00  INFO 3928 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60849 (http) with context path ''
+2023-08-13T13:06:16.382-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : Started AuthorControllerTest in 1.424 seconds (process running for 9.573)
+2023-08-13T13:06:17.468-03:00  INFO 3928 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13T13:06:17.468-03:00  INFO 3928 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-13T13:06:17.470-03:00  INFO 3928 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-13T13:06:17.958-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-13T13:06:17.959-03:00  INFO 3928 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-13T13:06:17.964-03:00  INFO 3928 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2023-08-13T13:06:18.043-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : Starting AuthorControllerTest using Java 17.0.2 with PID 3928 (started by Alan in F:\Projects\DemoLab)
+2023-08-13T13:06:18.044-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-13T13:06:18.456-03:00  INFO 3928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13T13:06:18.473-03:00  INFO 3928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2023-08-13T13:06:18.511-03:00  INFO 3928 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-08-13T13:06:18.620-03:00  INFO 3928 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-08-13T13:06:18.621-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-13T13:06:18.622-03:00  INFO 3928 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13T13:06:18.696-03:00  INFO 3928 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-13T13:06:18.696-03:00  INFO 3928 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+2023-08-13T13:06:18.714-03:00  INFO 3928 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d48678dd-7681-4c08-9d9e-59ce18faa42d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-08-13T13:06:18.763-03:00  INFO 3928 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13T13:06:18.794-03:00  INFO 3928 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-13T13:06:18.794-03:00  INFO 3928 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13T13:06:18.819-03:00  INFO 3928 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-13T13:06:18.908-03:00  INFO 3928 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13T13:06:18.924-03:00  INFO 3928 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13T13:06:19.065-03:00  WARN 3928 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13T13:06:19.243-03:00  INFO 3928 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60852 (http) with context path ''
+2023-08-13T13:06:19.250-03:00  INFO 3928 --- [    Test worker] c.e.d.controller.AuthorControllerTest    : Started AuthorControllerTest in 1.278 seconds (process running for 12.441)
+2023-08-13T13:06:19.262-03:00  INFO 3928 --- [o-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13T13:06:19.262-03:00  INFO 3928 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-13T13:06:19.263-03:00  INFO 3928 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at Aug 13, 2023, 1:06:19 PM</p>
+</div>
+</div>
+</body>
+</html>
