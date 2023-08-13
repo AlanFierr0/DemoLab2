@@ -46,4 +46,13 @@ public class BookGenerator {
         return books;
 
     }
+
+    public static BookDto generateBook(){
+        return BookDto.builder().id(1L).title("Book1").year(2000).genre("genre1")
+                .author(AuthorDto.builder()
+                        .id(6L)
+                        .name("Author6")
+                        .build())
+                .build();
+    }
 }

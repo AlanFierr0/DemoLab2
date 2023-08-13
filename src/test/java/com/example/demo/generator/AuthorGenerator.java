@@ -11,7 +11,6 @@ import java.util.List;
 public class AuthorGenerator {
     public static List<AuthorDto> generateAuthors(){
         List<AuthorDto> authors = new ArrayList<>();
-
         authors.add(AuthorDto.builder()
                 .id(1L)
                 .name("Author1")
@@ -32,8 +31,12 @@ public class AuthorGenerator {
                 .id(5L)
                 .name("Author5")
                 .build());
-
         return authors;
-
+    }
+    public static AuthorDto generateAuthor(){
+        return AuthorDto.builder()
+                .id(1L)
+                .name("Author1")
+                .build();
     }
 }
